@@ -1,0 +1,12 @@
+@startuml
+Shape <|-- Circle <|-- Square
+
+abstract class Shape {
+  {abstract} double calculateArea()
+}
+
+class Circle {
+  double calculateArea()
+  int calculatePerimeter()
+}
+@enduml
